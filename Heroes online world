@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Heroes Online World Gui   AcidX3yt#7051", "LightTheme")
+local Window = Library.CreateLib("Heroes Online World Gui   AcidX3yt#7051", "Midnight")
 
 local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("Main")
@@ -76,3 +76,11 @@ end)
 CreditsSection:NewLabel("Creator:AcidX3yt")
 CreditsSection:NewLabel("Helper:Ajay")
 CreditsSection:NewLabel("Helper:Chase")
+CreditsSection:NewLabel("Helper:Zuv")
+
+local Tab = Window:NewTab("Setting")
+local SettingsSection = Tab:NewSection("Settings")
+
+SettingsSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
