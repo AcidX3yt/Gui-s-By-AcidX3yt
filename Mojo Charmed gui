@@ -19,13 +19,13 @@ local OrbingSection = Tab:NewSection("Orbing for Whitelighter's")
 local Tab = Window:NewTab("Admin")
 local AdminsSection = Tab:NewSection("Admin")
 
-PlayerSection:NewSlider("WalkSpeed", "Makes you move Faster or Slower", 500, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
+PlayerSection:NewSlider("WalkSpeed", "Makes you move Faster or Slower", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
 MainSection:NewButton("Energy", "GIves Energy", function()
     print("Clicked")
-    local args = {     [1] = "Energy",     [2] = "60",     [3] = "-1" }  game:GetService("ReplicatedStorage").Events.Buy:FireServer(unpack(args))
+    local args = {     [1] = "Energy",     [2] = "200",     [3] = "-1" }  game:GetService("ReplicatedStorage").Events.Buy:FireServer(unpack(args))
 end)
 
 WhirlingSection:NewButton("Underworld", "Only for Shax", function()
