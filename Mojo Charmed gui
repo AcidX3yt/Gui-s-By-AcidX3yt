@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Mojo Charmed Gui By   AcidX3yt", "Sentinel")
+local Window = Library.CreateLib("Mojo Charmed Gui By   AcidX3yt", "Synapse")
 
 local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("Main")
@@ -551,7 +551,6 @@ OrbingSection:NewButton("P3", "For Whitelighter/Witches", function()
 game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
 end)
 
-end)
 PlayerSection:NewButton("Reset", "Resets Character", function()
     print("Clicked")
     game:GetService("ReplicatedStorage").Events.ChangeRole:FireServer()
