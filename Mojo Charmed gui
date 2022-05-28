@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Mojo Charmed", "Synapse")
+local Window = Library.CreateLib("Mojo Charmed Gui By   AcidX3yt", "Sentinel")
 
 local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("Main")
