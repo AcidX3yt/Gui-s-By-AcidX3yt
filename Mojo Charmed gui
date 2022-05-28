@@ -551,7 +551,7 @@ OrbingSection:NewButton("P3", "For Whitelighter/Witches", function()
 game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
 end)
 
-
+end)
 PlayerSection:NewButton("Reset", "Resets Character", function()
     print("Clicked")
     game:GetService("ReplicatedStorage").Events.ChangeRole:FireServer()
