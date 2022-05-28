@@ -25,7 +25,7 @@ end)
 
 MainSection:NewButton("Energy", "GIves Energy", function()
     print("Clicked")
-    local args = {     [1] = "Energy",     [2] = "200",     [3] = "-1" }  game:GetService("ReplicatedStorage").Events.Buy:FireServer(unpack(args))
+    local args = {     [1] = "Energy",     [2] = "99999999",     [3] = "-1" }  game:GetService("ReplicatedStorage").Events.Buy:FireServer(unpack(args))
 end)
 
 WhirlingSection:NewButton("Underworld", "Only for Shax", function()
