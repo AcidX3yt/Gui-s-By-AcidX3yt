@@ -34,7 +34,7 @@ local args = {
 game:GetService("ReplicatedStorage").Events.Buy:FireServer(unpack(args))
 end)
 
-Section:NewButton("In the Same spot", "tp in the same spot", function()
+WhirlingSection:NewButton("In the Same spot", "tp in the same spot", function()
     print("Clicked")
 local args = {
     [1] = "Place",
