@@ -34,6 +34,18 @@ local args = {
 game:GetService("ReplicatedStorage").Events.Buy:FireServer(unpack(args))
 end)
 
+Section:NewButton("In the Same spot", "tp in the same spot", function()
+    print("Clicked")
+local args = {
+    [1] = "Place",
+    [2] = "In-Place",
+    [3] = "Whirling"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+
+end)
+
 WhirlingSection:NewButton("Underworld", "Only for Shax", function()
     print("Clicked")
 local args = {
