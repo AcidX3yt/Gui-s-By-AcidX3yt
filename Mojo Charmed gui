@@ -16,6 +16,9 @@ local ShimmeringSection = Tab:NewSection("Shimmering Only for some demons")
 local Tab = Window:NewTab("Orbing")
 local OrbingSection = Tab:NewSection("Orbing for Whitelighter's")
 
+local Tab = Window:NewTab("Blinking")
+local BlinkingSection = Tab:NewSection("Blinking")
+
 local Tab = Window:NewTab("Admin")
 local AdminsSection = Tab:NewSection("Admin")
 
@@ -224,6 +227,19 @@ WhirlingSection:NewButton("P3", "only for shax", function()
 game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
 
 end)
+
+ShimmeringSection:NewButton("Shimmer In-Place", "Shimmer in same spot", function()
+    print("Clicked")
+    local args = {
+    [1] = "Place",
+    [2] = "In-Place",
+    [3] = "Shimmering"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+
+end)
+
 ShimmeringSection:NewButton("Underworld", "For some demons", function()
     print("Clicked")
     local args = {
@@ -404,6 +420,17 @@ game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
 
 end)
 
+OrbingSection:NewButton("Orb In-Place", "Same SPot", function()
+    print("Clicked")
+    local args = {
+    [1] = "Place",
+    [2] = "In-Place",
+    [3] = "Orbing"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
 OrbingSection:NewButton("Underworld", "For Whitelighter/Witches", function()
     print("Clicked")
     local args = {
@@ -564,6 +591,183 @@ OrbingSection:NewButton("P3", "For Whitelighter/Witches", function()
     [1] = "Place",
     [2] = "P3",
     [3] = "Orbing"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("blink In-Place", "Blink in same spot", function()
+    print("Clicked")
+    local args = {
+    [1] = "Place",
+    [2] = "In-Place",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+
+end)
+
+BlinkingSection:NewButton("Underworld", "For warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Underworld",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Bridge", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Bridge",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Outside Manor", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Outside Manor",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Grand Hallway", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Grand Hallway",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Office", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Office",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Police Station", "For warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Police Station",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Bank", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Bank",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Apartments", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Apartments",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Town Centre", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Town Centre",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Church", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Church",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Manor Attic", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Attic",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Inside Manor", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Manor",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Witch Shop", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Witch Shop",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("Jail Cell", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "Jail Cell",
+    [3] = "Blinking"
+}
+
+game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
+end)
+
+BlinkingSection:NewButton("P3", "For Warlocks", function()
+    print("Clicked")
+        local args = {
+    [1] = "Place",
+    [2] = "P3",
+    [3] = "Blinking"
 }
 
 game:GetService("ReplicatedStorage").Events.Teleporting:FireServer(unpack(args))
