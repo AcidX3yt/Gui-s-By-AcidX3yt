@@ -1048,9 +1048,10 @@ end)
 local Tab = Window:NewTab("Credits")
 local CreditsSection = Tab:NewSection("Credits")
 
-CreditsSection:NewLabel("Creator:☮PiperHalliwell☮#7051")
-CreditsSection:NewLabel("Helper:Ajay 🦭#6881")
-CreditsSection:NewLabel("Helper:Claudev0#8849")
+CreditsSection:NewLabel("Creator:AcidX3yt")
+CreditsSection:NewLabel("Helper:Ajaymwa")
+CreditsSection:NewLabel("Helper:Chase")
+CreditsSection:NewLabel("SHOUTOUT TO: HOME OF THE MENACE discord.gg/Hotm")
 
 local Tab = Window:NewTab("Settings")
 local SettingsSection = Tab:NewSection("Settings")
