@@ -186,7 +186,7 @@ end)
 
 
 
-local Toggle1 = Section2:CreateToggle("PapaPlantz#3856 Personal Feature", Settings.personal, function(State)
+local Toggle1 = Section2:CreateToggle("AcidX3's Personal Feature", Settings.personal, function(State)
 Settings.personal = State
 game:GetService("RunService").Stepped:connect(
     function()
@@ -207,7 +207,7 @@ game:GetService("RunService").Stepped:connect(
 )
 end)
 
-Toggle1:AddToolTip("haha i fucked your mom last night")
+Toggle1:AddToolTip("For ME LMAO")
 local Button1 = Section2:CreateButton("No Tool CoolDown", function()
 c()
 game:GetService("Players").LocalPlayer.Backpack.Punch:FindFirstChildOfClass("NumberValue").Value = 0
