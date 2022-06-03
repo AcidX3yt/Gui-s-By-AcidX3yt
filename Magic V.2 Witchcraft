@@ -1,0 +1,334 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("WitchCraft V.2 Script  (Project Acid)", "Serpent")
+
+local Tab = Window:NewTab("Main")
+local MainSection = Tab:NewSection("Main")
+
+local Tab = Window:NewTab("Items")
+local ItemsSection = Tab:NewSection("Items")
+
+local Tab = Window:NewTab("Keybinds")
+local KeybindsSection = Tab:NewSection("Keybinds")
+
+local Tab = Window:NewTab("TeamChanger")
+local TeamSection = Tab:NewSection("Change Your Species")
+
+MainSection:NewButton("Coin increase", "gives 40000", function()
+    print("Clicked")
+local args = {
+    [1] = 40000
+}
+
+game:GetService("ReplicatedStorage").Remotes.GiveCurrency:FireServer(unpack(args))
+end)
+
+ItemsSection:NewButton("Greater Health Potion", "Heal", function()
+    
+local args = {
+    [1] = "Greater Health Potion"
+}
+
+game:GetService("ReplicatedStorage").Remotes.BuyItem:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+
+ItemsSection:NewButton("Size Potion", "Decrease your size", function()
+
+local args = {
+    [1] = "Size Potion"
+}
+
+game:GetService("ReplicatedStorage").Remotes.BuyItem:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+ItemsSection:NewButton("Swiftness Potion", "Run Fast", function()
+
+local args = {
+    [1] = "Swiftness Potion"
+}
+
+game:GetService("ReplicatedStorage").Remotes.BuyItem:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+ItemsSection:NewButton("Regeneration Potion", "Heal", function()
+
+local args = {
+    [1] = "Regeneration Potion"
+}
+
+game:GetService("ReplicatedStorage").Remotes.BuyItem:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+
+KeybindsSection:NewToggle("HolyFire (Q)", "Insational & HolyBurn!", function(state)
+    if state then
+                            
+        print("Toggle On")
+    
+        
+        
+             local function getPlayer()
+                    local userInput = game:GetService("UserInputService")
+                    local cam = workspace.CurrentCamera
+                    local mousePos = userInput:GetMouseLocation()
+                    local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+                    players = {}
+                    for _, x in next, game:GetService('Players'):GetPlayers() do
+                        players[#players + 1] = x.Character
+                    end
+                    local raycastParams = RaycastParams.new()
+                    raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+                    raycastParams.FilterDescendantsInstances = players
+                    raycastParams.IgnoreWater = true
+                    local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+                    if raycastResult then
+                        for _, x in next, game:GetService('Players'):GetPlayers() do
+                            if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                                continue 
+                            end
+                            return x
+                        end
+                    end
+                    return false
+                end
+                
+                local function Set(list)
+                    local set = {}
+                    for _, l in ipairs(list) do
+                        if l then
+                            set[l] = true
+                        end
+                    end
+                    return set
+                end
+                game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+                 if key == "q" then
+                local player = getPlayer()
+                 if player then
+
+local args = {
+    [1] = player.Character.HitPart
+}
+
+game:GetService("ReplicatedStorage").HellFire3:FireServer(unpack(args))
+
+
+ end
+    end
+    end)   
+    end
+end)
+
+KeybindsSection:NewToggle("HellFire (Q)", "Insational & FireBurn!", function(state)
+    if state then
+                            
+        print("Toggle On")
+    
+        
+        
+             local function getPlayer()
+                    local userInput = game:GetService("UserInputService")
+                    local cam = workspace.CurrentCamera
+                    local mousePos = userInput:GetMouseLocation()
+                    local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+                    players = {}
+                    for _, x in next, game:GetService('Players'):GetPlayers() do
+                        players[#players + 1] = x.Character
+                    end
+                    local raycastParams = RaycastParams.new()
+                    raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+                    raycastParams.FilterDescendantsInstances = players
+                    raycastParams.IgnoreWater = true
+                    local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+                    if raycastResult then
+                        for _, x in next, game:GetService('Players'):GetPlayers() do
+                            if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                                continue 
+                            end
+                            return x
+                        end
+                    end
+                    return false
+                end
+                
+                local function Set(list)
+                    local set = {}
+                    for _, l in ipairs(list) do
+                        if l then
+                            set[l] = true
+                        end
+                    end
+                    return set
+                end
+                game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+                 if key == "q" then
+                local player = getPlayer()
+                 if player then
+
+local args = {
+    [1] = player.Character.HitPart
+}
+
+game:GetService("ReplicatedStorage").HellFire2:FireServer(unpack(args))
+
+
+ end
+    end
+    end)   
+    end
+end)
+KeybindsSection:NewToggle("HexIgnis (Q)", "Insational Burn!", function(state)
+    if state then
+                            
+        print("Toggle On")
+    
+        
+        
+             local function getPlayer()
+                    local userInput = game:GetService("UserInputService")
+                    local cam = workspace.CurrentCamera
+                    local mousePos = userInput:GetMouseLocation()
+                    local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+                    players = {}
+                    for _, x in next, game:GetService('Players'):GetPlayers() do
+                        players[#players + 1] = x.Character
+                    end
+                    local raycastParams = RaycastParams.new()
+                    raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+                    raycastParams.FilterDescendantsInstances = players
+                    raycastParams.IgnoreWater = true
+                    local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+                    if raycastResult then
+                        for _, x in next, game:GetService('Players'):GetPlayers() do
+                            if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                                continue 
+                            end
+                            return x
+                        end
+                    end
+                    return false
+                end
+                
+                local function Set(list)
+                    local set = {}
+                    for _, l in ipairs(list) do
+                        if l then
+                            set[l] = true
+                        end
+                    end
+                    return set
+                end
+                game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+                 if key == "q" then
+                local player = getPlayer()
+                 if player then
+
+local args = {
+    [1] = player.Character.HitPart
+}
+
+game:GetService("ReplicatedStorage").HellFire:FireServer(unpack(args))
+
+
+ end
+    end
+    end)   
+    end
+end)
+
+TeamSection:NewButton("HexWitch", "Change", function()
+local args = {
+    [1] = BrickColor.new(331)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+TeamSection:NewButton("Fairy", "Change", function()
+
+local args = {
+    [1] = BrickColor.new(309)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+TeamSection:NewButton("Fallen Angel", "Change", function()
+
+local args = {
+    [1] = BrickColor.new(26)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+TeamSection:NewButton("Pagan Witch", "Change", function()
+
+local args = {
+    [1] = BrickColor.new(107)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+TeamSection:NewButton("Angel", "Change", function()
+
+local args = {
+    [1] = BrickColor.new(226)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+TeamSection:NewButton("Weak witch/warlock", "change", function()
+
+local args = {
+    [1] = BrickColor.new(307)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+TeamSection:NewButton("Advanced Witch/Warlock", "Change", function()
+
+local args = {
+    [1] = BrickColor.new(1031)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+TeamSection:NewButton("Mortal", "change", function()
+
+local args = {
+    [1] = BrickColor.new(311)
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeTeam:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Setting")
+local SettingsSection = Tab:NewSection("Settings")
+
+SettingsSection:NewKeybind("Toggle Ui", "Take off screen change to ctrl", Enum.KeyCode.L, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Credits")
+local CreditsSection = Tab:NewSection("Credits")
+
+CreditsSection:NewLabel("Creator:AcidX3")
+CreditsSection:NewLabel("Tester: Ayesha")
