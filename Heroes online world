@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Heroes Online World Gui   AcidX3yt#7051", "Midnight")
+local Window = Library.CreateLib("Heroes Online World Gui (Project Acid)", "Serpent")
 
 local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("Main")
@@ -68,6 +68,21 @@ game:GetService("ReplicatedStorage").Knit.Services.AbilityService.RF.AbilityRequ
 
 end)
 
+local Tab = Window:NewTab("Raven Keybinds")
+local RavenKeybinds = Tab:NewSection("Raven Spells Keybinds")
+
+RavenKeybinds:NewKeybind("Raven More Damage spell Keybinds", "MORE DEFENSE AND DAMAGE", Enum.KeyCode.C, function()
+	print("You just clicked the bind")
+	local args = {
+    [1] = "ExtraKey1",
+    [2] = true,
+    [3] = "CurrentAbility"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.AbilityService.RF.AbilityRequest:InvokeServer(unpack(args))
+
+end)
+
 AdminsSection:NewButton("Infinite yeild", "use ;", function()
     print("Clicked")
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
@@ -78,9 +93,9 @@ CreditsSection:NewLabel("Helper:Ajay")
 CreditsSection:NewLabel("Helper:Chase")
 CreditsSection:NewLabel("Helper:Zuv")
 
-local Tab = Window:NewTab("Settings")
+local Tab = Window:NewTab("Setting")
 local SettingsSection = Tab:NewSection("Settings")
 
-SettingsSection:NewKeybind("Toggle Gui", "Toggle On Or Off", Enum.KeyCode.F, function()
+SettingsSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
