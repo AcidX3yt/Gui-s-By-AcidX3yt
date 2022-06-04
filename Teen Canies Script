@@ -1,6 +1,21 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Teen Canines Script  (Project Acid)", "Serpent")
-local mainSection = Tab:NewSection("Lets you Spawn as Gamepass Charthers for free")
+
+local Tab = Window:NewTab("Main")
+local mainSection = Tab:NewSection("Main")
+
+local Tab = Window:NewTab("Powers")
+local PowerSection = Tab:NewSection("With Great Power Come's Well Power")
+
+mainSection:NewButton("GetGamepasses", "Get all gamepasses", function()
+    print("Clicked")
+    if game.CreatorType == Enum.CreatorType.User then
+game.Players.LocalPlayer.UserId = game.CreatorId
+end
+if game.CreatorType == Enum.CreatorType.Group then
+game.Players.LocalPlayer.UserId = game:GetService("GroupService"):GetGroupInfoAsync(game.CreatorId).Owner.Id
+end
+end)
 
 mainSection:NewButton("Deucalion", "ButtonInfo", function()
     print("Clicked")
@@ -73,9 +88,6 @@ mainSection:NewButton("Allison", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-
-local Tab = Window:NewTab("Powers")
-local PowerSection = Tab:NewSection("With Great Power Come's Well Power")
 
 PowerSection:NewButton("Regain all energy fast click when low", "ButtonInfo", function()
     print("Clicked")
