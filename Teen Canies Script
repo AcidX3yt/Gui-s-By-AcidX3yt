@@ -1,8 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Teen Canines Script  (Project Acid)", "Serpent")
+local mainSection = Tab:NewSection("Lets you Spawn as Gamepass Charthers for free")
 
-local Section = Tab:NewSection("Lets you Spawn as Gamepass Charthers for free")
-Section:NewButton("Deucalion", "ButtonInfo", function()
+mainSection:NewButton("Deucalion", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Deucalion"
@@ -10,7 +10,8 @@ Section:NewButton("Deucalion", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-Section:NewButton("Kali", "ButtonInfo", function()
+
+mainSection:NewButton("Kali", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Kali"
@@ -18,7 +19,8 @@ Section:NewButton("Kali", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-Section:NewButton("Ennis", "ButtonInfo", function()
+
+mainSection:NewButton("Ennis", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Ennis"
@@ -26,7 +28,8 @@ Section:NewButton("Ennis", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-Section:NewButton("Kira", "ButtonInfo", function()
+
+mainSection:NewButton("Kira", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Kira Yukimura"
@@ -34,7 +37,8 @@ Section:NewButton("Kira", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-Section:NewButton("Noshiko", "ButtonInfo", function()
+
+mainSection:NewButton("Noshiko", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Noshiko Yukimura"
@@ -42,7 +46,8 @@ Section:NewButton("Noshiko", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-Section:NewButton("Aiden", "ButtonInfo", function()
+
+mainSection:NewButton("Aiden", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Aiden"
@@ -50,7 +55,8 @@ Section:NewButton("Aiden", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-Section:NewButton("Ethan", "ButtonInfo", function()
+
+mainSection:NewButton("Ethan", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Ethan"
@@ -58,7 +64,8 @@ Section:NewButton("Ethan", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
-Section:NewButton("Allison", "ButtonInfo", function()
+
+mainSection:NewButton("Allison", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = "Allison Argent"
@@ -66,9 +73,11 @@ Section:NewButton("Allison", "ButtonInfo", function()
 
 game:GetService("ReplicatedStorage").Appearance:InvokeServer(unpack(args))
 end)
+
 local Tab = Window:NewTab("Powers")
-local Section = Tab:NewSection("With Great Power Come's Well Power")
-Section:NewButton("Regain all energy fast click when low", "ButtonInfo", function()
+local PowerSection = Tab:NewSection("With Great Power Come's Well Power")
+
+PowerSection:NewButton("Regain all energy fast click when low", "ButtonInfo", function()
     print("Clicked")
     local args = {
     [1] = -99999
@@ -76,7 +85,8 @@ Section:NewButton("Regain all energy fast click when low", "ButtonInfo", functio
 
 game:GetService("ReplicatedStorage").EnergyDrain:FireServer(unpack(args))
 end)
-Section:NewButton("Scream", "ButtonInfo", function()
+
+PowerSection:NewButton("Scream", "ButtonInfo", function()
     print("Clicked")
     game:GetService("ReplicatedStorage").Moves.Scream:FireServer()
 end)
