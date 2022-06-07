@@ -1,0 +1,284 @@
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MagikManz/Venyx-UI-Library/main/source.lua"))()
+local ui = UI.new("(Project Acid) The Vampire Legacies Booster Script")-- Gui name
+
+local Misc = ui:Tab("Misc")
+--local Witch = ui:Tab("Witch")
+local Teleports = ui:Tab("Teleports")--Tabs
+local Credits = ui:Tab("Credits")
+local Settings = ui:Tab("To Toggle gui is Right Shift")
+
+local Teleports = Teleports:Section("Teleports")
+
+Misc:Button("GetCoins",function()
+    local args = {
+    [1] = "smallCoinGift"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Toggle("DeleteChannel", false, function(toggle)
+_G.DeleteChannel = toggle
+    while _G.DeleteChannel == true do
+	    local Player = game.Players.LocalPlayer
+    	local Character = Player.Character
+
+    	local Channel = Character:WaitForChild("Channeling")
+    	Channel:Destroy()
+    	wait()
+    end
+end)
+Misc:Slider("Speed", 0, 900, 16, function(value)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+Misc:Slider("Jump Power", 0, 900, 50, function(value)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+Misc:Button("Infinite Yeild",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+Misc:Button("RemoteSpy",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/70mkSi6G"))()
+end)
+Misc:Button("GetStake",function()
+    local args = {
+    [1] = "freeStake"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Ressurect",function()
+    local args = {[1] = {[1] = game:GetService("Players").LocalPlayer.PlayerGui.dialogueGui.dialogueScript,[2] = "purchaseResurrection",[3] = game:GetService("Players").LocalPlayer.PlayerGui.dialogueGui}}
+    game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("GetOakAsh",function()
+    local args = {[1] = {[1] = game:GetService("Players").LocalPlayer.PlayerGui.dialogueGui.dialogueScript,[2] = "receiveWhiteOakAsh",[3] = game:GetService("Players").LocalPlayer.PlayerGui.dialogueGui}}
+    game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("More Magic(200)",function()
+    local args = {
+    [1] = "increaseMaxMagic"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("More Energy(200)",function()
+    local args = {
+    [1] = "increaseMaxEnergy"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Increase Health",function()
+    local args = {
+    [1] = "increaseMaxHealth"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Heal Self",function()
+    local args = {[1] = {["Damage"] = -100}}
+    game:GetService("ReplicatedStorage").Events.CharacterSystems.FallDamage:FireServer(unpack(args))
+end)
+Misc:Button("Immortality ON",function()
+    local args = {[1] = {["Damage"] = -100000}}
+    game:GetService("ReplicatedStorage").Events.CharacterSystems.FallDamage:FireServer(unpack(args))
+end)
+Misc:Button("Immortality OFF",function()
+    local args = {[1] = {["Damage"] = 100000}}
+    game:GetService("ReplicatedStorage").Events.CharacterSystems.FallDamage:FireServer(unpack(args))
+end)
+Misc:Button("Change Fit",function()
+    local args = {[1] = {[1] = game:GetService("Players").LocalPlayer.PlayerGui.dialogueGui.dialogueScript,[2] = "changeClothes",[3] = game:GetService("Players").LocalPlayer.PlayerGui.dialogueGui}}
+    game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Remove Boundaries",function()
+    game.workspace.Boundaries:Destroy()
+end)
+
+Misc:Button("Become Mortal",function()
+    local args = {
+    [1] = "turnMortal"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Turn To Vamp(Human Only)",function()
+    local args = {
+    [1] = "turnVamp"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Turn To Vamp (Any Char)",function()
+    local args = {
+    [1] = "turnVamp"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("identifyPlant",function()
+    local args = {
+    [1] = "identifyPlant"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Get Blood",function()
+    local args = {
+    [1] = "receiveBloodDrink"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Bouquet",function()
+    local args = {
+    [1] = "flowers"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Coffee",function()
+    local args = {
+    [1] = "receiveCoffee"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Beverage",function()
+    local args = {
+    [1] = "receiveBeverage"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("HomeWork",function()
+    local args = {
+    [1] = "getHomework"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("BuyCandle",function()
+    local args = {
+    [1] = "buyCandle"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Buy Enchanted Stake",function()
+    local args = {
+    [1] = "buyDagger"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Misc:Button("Buy Moon Vial",function()
+    local args = {
+    [1] = "buyPotion"
+}
+
+game:GetService("ReplicatedStorage").Events.guiSpecialEvent:FireServer(unpack(args))
+end)
+
+Credits:Button("Copy Discord Name",function()
+    setclipboard([[AcidX3yt#7051]])
+end)
+Credits:Button("Copy Discord Group Link",function()
+    setclipboard([[discord.gg/RWc4w7atXm]])
+end)
+Credits:Button("YouTube Channel",function()
+    setclipboard([[https://www.youtube.com/channel/UC1BHHQFrQvUyIWiCpk_yydw]])
+end)
+Teleports:Button("Garage",function()
+  local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(801, -12, -58)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("The Cure",function()
+  local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(801, -12, -58)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("Stake Shop",function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-45, 86, -273)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("Hospital",function()
+  local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(566, 85, 472)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("Salvatore School",function()
+  local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(259, 85, -972)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("Harvest Area",function()
+  local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-448, 86, -357)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("Locator Map",function()
+  local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-578, 51, -239)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("Middle Of Town",function()
+  local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(-7, 85, -37)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+Teleports:Button("Mystic Falls High School",function()
+ 	 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(172, 88, 480)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+wait(0.3)
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "The Vampire Legacies Booster UI loaded";Text = "Project Acid"})
