@@ -16,6 +16,27 @@ local AdminsSection = Tab:NewSection("Admins")
 local Tab = Window:NewTab("Credits")
 local CreditsSection = Tab:NewSection("Credits")
 
+MainSection:NewButton("Redeem Codes", "redeams codes", function()
+    print("Clicked")
+    local args = {
+    [1] = "HEROESFAMILY"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
+
+    local args = {
+    [1] = "KLARION"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
+
+    local args = {
+    [1] = "RAINBOW"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
+end)
+
 PlayersSection:NewSlider("WalkSpeed", "Fast Or Slow", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
