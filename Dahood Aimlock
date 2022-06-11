@@ -2108,7 +2108,7 @@ do
     library:FormatWindows()
 end
  
-local Window = library:AddWindow("Christmas", {
+local Window = library:AddWindow("Project Acid", {
     main_color = Color3.fromRGB(10, 10, 10),
     min_size = Vector2.new(450, 500),
     toggle_key = Enum.KeyCode.RightShift,
@@ -2314,8 +2314,8 @@ CreditTAB:AddButton("Made by Christmas.#0001", function(bool)
     })
 end)
  
-CreditTAB:AddButton("Join discord.gg/S4nPz6quZM", function(bool)
-    setclipboard("https://discord.gg/S4nPz6quZM")
+CreditTAB:AddButton("Join discord.gg/RWc4w7atXm", function(bool)
+    setclipboard("https://discord.gg/RWc4w7atXm")
     wait(1)
     local function callback(text)
         if text == "Yes" then
