@@ -280,5 +280,10 @@ Teleports:Button("Mystic Falls High School",function()
 	wait(0.1)
 	pl.CFrame = location
 end)
-wait(0.3)
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "The Vampire Legacies Booster UI loaded";Text = "Project Acid"})
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Project Acid";
+    Text = "The Vampire Legacies Booster";
+    Icon = "https://tr.rbxcdn.com/72a068fd02dd9cca47eb8ec63ef87863/150/150/Image/Png";
+    Duration = "30";
+    Button1 = "Enjoy :)";
+})
