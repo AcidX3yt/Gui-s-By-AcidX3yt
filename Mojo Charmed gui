@@ -1059,3 +1059,11 @@ local SettingsSection = Tab:NewSection("Settings")
 SettingsSection:NewKeybind("Toggle Ui", "Take of screen", Enum.KeyCode.L, function()
 	Library:ToggleUI()
 end)
+
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Project Acid";
+    Text = "Mojo Charmed";
+    Icon = "https://tr.rbxcdn.com/72a068fd02dd9cca47eb8ec63ef87863/150/150/Image/Png";
+    Duration = "30";
+    Button1 = "Enjoy :)";
+})
