@@ -182,7 +182,7 @@ end)
 game.StarterGui:SetCore("SendNotification", { 
     Title = "Project Acid";
     Text = "Heroes Online World";
-    Icon = "";
+    Icon = "https://tr.rbxcdn.com/72a068fd02dd9cca47eb8ec63ef87863/150/150/Image/Png";
     Duration = "30";
     Button1 = "Enjoy :)";
 })
