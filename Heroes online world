@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Heroes Online World Gui (Project Acid)", "Serpent")
+local Window = Library.CreateLib("Hereos Online World Gui (Project Acid)", "Serpent")
 
 local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("Main")
@@ -77,19 +77,19 @@ end)
 MainSection:NewButton("Redeem Codes", "redeams codes", function()
     print("Clicked")
     local args = {
-    [1] = "HEROESFAMILY"
+    [1] = "4THJULY"
 }
 
 game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
 
     local args = {
-    [1] = "KLARION"
+    [1] = "KAMSIFIED"
 }
 
 game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
 
     local args = {
-    [1] = "RAINBOW"
+    [1] = "THANKSHERO"
 }
 
 game:GetService("ReplicatedStorage").Knit.Services.CodesService.RF.Redeem:InvokeServer(unpack(args))
@@ -99,7 +99,7 @@ PlayersSection:NewSlider("WalkSpeed", "Fast Or Slow", 500, 0, function(s) -- 500
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-KeybindsSection:NewKeybind("Etavitewal", "Zatanna Zattara", Enum.KeyCode.P, function()
+KeybindsSection:NewKeybind("Etaviteval", "Zatanna Zattara", Enum.KeyCode.P, function()
 	print("You just clicked the bind")
 	local args = {
     [1] = "ExtraKey1",
@@ -170,7 +170,7 @@ end)
 CreditsSection:NewLabel("Creator:AcidX3yt")
 CreditsSection:NewLabel("Helper:Ajay")
 CreditsSection:NewLabel("Helper:Chase")
-CreditsSection:NewLabel("Helper:Zuv")
+CreditsSection:NewLabel("Discord:https://discord.gg/RWc4w7atXm")
 
 local Tab = Window:NewTab("Setting")
 local SettingsSection = Tab:NewSection("Settings")
