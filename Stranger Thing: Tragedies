@@ -1,0 +1,171 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Stranger Things: Tragedies Made By Project Acid", "Serpent")
+
+local Tab = Window:NewTab("Characters")
+local HumansSection = Tab:NewSection("Humans")
+
+HumansSection:NewButton("Erica Sinclair", "", function()
+    local args = {
+        [1] = "Erica"
+    }
+
+    game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+HumansSection:NewButton("Chrissy", "", function()
+    local args = {
+        [1] = "Chrissy"
+    }
+
+    game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+HumansSection:NewButton("Nancy", "", function()
+    local args = {
+        [1] = "Nancy"
+    }
+
+    game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+local PsychicsSection = Tab:NewSection("Psychics")
+
+PsychicsSection:NewButton("001", "Vecna", function()
+    local args = {
+        [1] = "001"
+    }
+
+    game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+PsychicsSection:NewButton("002", "", function()
+        local args = {
+            [1] = "002"
+        }
+    
+        game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+PsychicsSection:NewButton("004", "", function()
+        local args = {
+            [1] = "004"
+        }
+    
+        game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+PsychicsSection:NewButton("010", "", function()
+        local args = {
+            [1] = "010"
+        }
+    
+        game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+PsychicsSection:NewButton("Aztec Eleven", "Eleven stronger", function()
+        local args = {
+            [1] = "Aztec Eleven"
+        }
+    
+        game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+PsychicsSection:NewButton("Kali", "", function()
+        local args = {
+            [1] = "Kali"
+        }
+    
+        game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+PsychicsSection:NewButton("Lab Eleven", "", function()
+        local args = {
+            [1] = "Lab Eleven"
+        }
+    
+        game:GetService("ReplicatedStorage"):FindFirstChild("Pick Character"):FireServer(unpack(args))
+end)
+
+local Tab = Window:NewTab("Powers")
+local PowersSection = Tab:NewSection("Powers")
+
+PowersSection:NewKeybind("Invisibility", "", Enum.KeyCode.N, function()
+local args = {
+    [1] = "invisibility",
+    [2] = workspace.StarcourtMall:FindFirstChild("1BottomLevel").Floor,
+    [3] = Vector3.new(844.8388671875, 75.6248550415039, 877.2667236328125)
+}
+
+game:GetService("ReplicatedStorage").Psychics.Kali:FindFirstChild("Kali Powers"):FireServer(unpack(args))
+end)
+
+PowersSection:NewKeybind("Swarm", "", Enum.KeyCode.M, function()
+local args = {
+    [1] = "swarm",
+    [2] = workspace.StarcourtMall:FindFirstChild("1BottomLevel").CourtYard.PlantBench.WallFlowerPot,
+    [3] = Vector3.new(868.5960083007812, 77.9154281616211, 862.0021362304688)
+}
+
+game:GetService("ReplicatedStorage").Psychics.Kali:FindFirstChild("Kali Powers"):FireServer(unpack(args))
+end)
+
+PowersSection:NewKeybind("Mass Throw", "", Enum.KeyCode.U, function()
+local args = {
+    [1] = "mass throw",
+    [2] = Vector3.new(902.6845092773438, 105.3123550415039, 825.5975952148438)
+}
+
+game:GetService("ReplicatedStorage").Psychics:FindFirstChild("Aztec Eleven"):FindFirstChild("Aztec Eleven Powers"):FireServer(unpack(args))
+end)
+
+PowersSection:NewButton("Kick", "", function()
+local args = {
+    [1] = "kick"
+}
+
+game:GetService("ReplicatedStorage").Humans.Combat:FindFirstChild("Combat Event"):FireServer(unpack(args))
+end)
+
+PowersSection:NewButton("Push", "", function()
+local args = {
+    [1] = "push"
+}
+
+game:GetService("ReplicatedStorage").Humans.Combat:FindFirstChild("Combat Event"):FireServer(unpack(args))
+end)
+
+PowersSection:NewButton("Pistol Equip", "", function()
+local args = {
+    [1] = "pistol-EQUIP",
+    [2] = Vector3.new(848.4066162109375, 85.17039489746094, 830.312744140625)
+}
+
+game:GetService("ReplicatedStorage").Humans.Guns:FindFirstChild("Guns Event"):FireServer(unpack(args))
+end)
+
+PowersSection:NewButton("Pistol Unequip", "", function()
+local args = {
+    [1] = "pistol-UNEQUIP",
+    [2] = Vector3.new(793.46923828125, 87.89068603515625, 776.0392456054688)
+}
+
+game:GetService("ReplicatedStorage").Humans.Guns:FindFirstChild("Guns Event"):FireServer(unpack(args))
+end)
+
+local Tab = Window:NewTab("Admin")
+local AdminSection = Tab:NewSection("Admin")
+
+AdminSection:NewButton("Infinite Yield", "Admin", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+local Tab = Window:NewTab("Credits/Settings")
+local SettingsSection = Tab:NewSection("Credits/Settings")
+
+local SettingsSection = Tab:NewSection("Created: AcidX3yt")
+local SettingsSection = Tab:NewSection("discord: https://discord.gg/RWc4w7atXm")
+
+local ToggleSection = Tab:NewSection("Toggle UI")
+ToggleSection:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.L, function()
+	Library:ToggleUI()
+end)
