@@ -1,0 +1,1486 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Crossover Legends GUI Made By Project Acid", "Serpent")
+
+local Tab = Window:NewTab("Characters")
+local Section = Tab:NewSection("Wanda")
+
+Section:NewButton("Age of Ultron Wanda", "", function()
+    local args = {
+        [1] = "AOUWanda"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport10.RemoteFunction:InvokeServer()
+
+end)
+
+Section:NewButton("Endgame Wanda", "", function()
+    local args = {
+        [1] = "WandaEndGame"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport11.RemoteFunction:InvokeServer()
+
+end)
+
+Section:NewButton("Comic Wanda", "", function()
+    local args = {
+        [1] = "ScarletWitch"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("WandaVision Wanda", "", function()
+    local args = {
+        [1] = "WandaVisionSkin"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport12.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Chaotic Wanda", "", function()
+    local args = {
+        [1] = "WandaHOM"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport14.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Multiverse of Madness Wanda", "", function()
+    local args = {
+        [1] = "WandaMOMSkin"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport31.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Variant Wanda", "", function()
+    local args = {
+        [1] = "WandaMOMSkinBlood"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport31.RemoteFunction:InvokeServer()
+end)
+
+local Section = Tab:NewSection("Phoenix")
+
+Section:NewButton("Jean Grey", "", function()
+    local args = {
+        [1] = "Jean(MarvelGirl)"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport8.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Jean Grey X-Men", "", function()
+    local args = {
+        [1] = "JeanGreyAdult"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport13.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Dark Phoenix Comics", "", function()
+    local args = {
+        [1] = "DarkPhoenixComics"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport15.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Dark Phoenix Movie", "", function()
+    local args = {
+        [1] = "DarkPhoenixMovie"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport16.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Dark Phoenix The Last Stand", "", function()
+    local args = {
+        [1] = "DarkPhoenixEB"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport17.RemoteFunction:InvokeServer()
+end)
+
+local Section = Tab:NewSection("Villains Gamepass")
+
+Section:NewButton("Thanos", "", function()
+    local args = {
+        [1] = "Thanos"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport19.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Infinity Ultron", "", function()
+    local args = {
+        [1] = "InfinityUltron"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport20.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Kang", "", function()
+    local args = {
+        [1] = "Kang"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport22.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Circe", "", function()
+    local args = {
+        [1] = "Circe"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport18.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Trigon", "", function()
+    local args = {
+        [1] = "Trigon"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport21.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("DarkSeid", "", function()
+    local args = {
+        [1] = "DarkSeid"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport23.RemoteFunction:InvokeServer()
+end)
+
+local Section = Tab:NewSection("Raven")
+
+Section:NewButton("Raven", "", function()
+    local args = {
+        [1] = "Raven"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport1.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("White Raven", "", function()
+    local args = {
+        [1] = "WhiteRaven"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport39.RemoteFunction:InvokeServer()
+end)
+
+local Section = Tab:NewSection("Marvel")
+
+Section:NewButton("Agatha Harkness", "", function()
+    local args = {
+        [1] = "AgathaHarkness"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport2.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Agatha Salem Skin", "", function()
+    local args = {
+        [1] = "AgathaSalemSkin"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport26.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Wiccan", "", function()
+    local args = {
+        [1] = "Wiccan"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport4.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Speed", "", function()
+    local args = {
+        [1] = "Speed"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport6.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Vision", "", function()
+    local args = {
+        [1] = "Vision"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport24.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Monica", "", function()
+    local args = {
+        [1] = "Monica"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport25.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Ice Man", "", function()
+    local args = {
+        [1] = "IceMan"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport27.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Polaris", "", function()
+    local args = {
+        [1] = "Polaris"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport28.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("America Chavez", "", function()
+    local args = {
+        [1] = "AmericaChavez"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport32.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Wong", "", function()
+    local args = {
+        [1] = "Wong"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport33.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Magik", "", function()
+    local args = {
+        [1] = "Magik"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport40.RemoteFunction:InvokeServer()
+end)
+
+local Section = Tab:NewSection("Illuminati")
+
+Section:NewButton("Doctor Strange", "", function()
+    local args = {
+        [1] = "DoctorStrange"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport30.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Captain Carter", "", function()
+    local args = {
+        [1] = "CaptainCarter"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport34.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Captain Marvel Maria Rambeau", "", function()
+    local args = {
+        [1] = "CaptainMarvelIluminatis"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport35.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Charles Xaivier", "", function()
+    local args = {
+        [1] = "CharlesXaivier"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport36.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Black Bolt", "", function()
+    local args = {
+        [1] = "BlackBolt"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport37.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Reed Richard", "", function()
+    local args = {
+        [1] = "ReedRichard"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport38.RemoteFunction:InvokeServer()
+end)
+
+local Section = Tab:NewSection("DC")
+
+Section:NewButton("Zatanna", "", function()
+    local args = {
+        [1] = "Zatanna"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport3.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Poison Ivy", "", function()
+    local args = {
+        [1] = "PoisonIvy"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport5.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Star Fire", "", function()
+    local args = {
+        [1] = "StarFire"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport7.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("SuperMan", "", function()
+    local args = {
+        [1] = "SuperMan"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport9.RemoteFunction:InvokeServer()
+end)
+
+local Section = Tab:NewSection("Others")
+
+Section:NewButton("Viktor Hargreeves", "", function()
+    local args = {
+        [1] = "Viktor"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport29.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("The Collector", "", function()
+    local args = {
+        [1] = "TheCollector"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport41.RemoteFunction:InvokeServer()
+end)
+
+Section:NewButton("Eleven", "", function()
+    local args = {
+        [1] = "Eleven"
+    }
+
+    game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+
+    workspace.Teleport42.RemoteFunction:InvokeServer()
+end)
+
+local Tab = Window:NewTab("Powers")
+local Section = Tab:NewSection("Chaotic Wanda Powers")
+
+Section:NewButton("Reality Explosion", "", function()
+    local args = {
+        [1] = Vector3.new(-1793.3585205078125, 900.3715209960938, -1263.2120361328125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.RealityExplosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Absorb", "", function()
+    local args = {
+        [1] = Vector3.new(-393.1123046875, 903.1625366210938, -313.9924621582031)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Chains.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("No More Mutants", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2466.908203125, 900.3715209960938, -833.5303955078125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.NoMoreMutants.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Summon ShumaGorath", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2302.5361328125, 901.007568359375, -1136.4805908203125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.RealityChange.Fire:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("MoM Wanda and Variant Wanda Powers")
+
+Section:NewButton("Slam", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2218.37353515625, 900.9901733398438, -610.2871704101562)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Slam.Fire:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Heal", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2198.45263671875, 1004.379150390625, -541.2386474609375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Hex", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2188.027099609375, 1004.379150390625, -542.6256713867188)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Hex.Fire:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("WandaVision Wanda Powers")
+
+Section:NewButton("Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2440.171630859375, 900.3715209960938, -1330.10009765625)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Hex Wall", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-11516.208984375, 2353.96533203125, 2655.15576171875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Wall.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Shock Wave", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2547.430419921875, 900.3715209960938, -1284.358154296875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.ShockWave.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Create Hex", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2593.7607421875, 900.3715209960938, -1290.3387451171875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Hex.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Runes", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2493.56005859375, 900.3715209960938, -1334.15234375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Runes.Fire:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("Dark Phoenix Comic Powers")
+
+Section:NewButton("Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1112.022216796875, 900.8934936523438, -1213.9991455078125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Phoenix Force", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1781.177490234375, 900.3715209960938, -1225.7213134765625)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Hell.Fire:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Change Matter", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2302.995849609375, 910.022705078125, -556.9657592773438)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.ChangeMatter.Fire:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Phoenix", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1834.18115234375, 935.1651000976562, -408.53912353515625)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.PhoenixForce.Fire:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Heal", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1471.0810546875, 900.8193359375, -615.723388671875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("Dark Phoenix Movie Powers")
+
+Section:NewButton("Invisible On", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    game:GetService("Players").LocalPlayer.Character.Invisible.Fires:FireServer()
+end)
+
+Section:NewButton("Invisible Off", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    game:GetService("Players").LocalPlayer.Character.Invisible.Fire:FireServer()
+end)
+
+Section:NewButton("Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(7313.87890625, 2425.24560546875, -4213.658203125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Phoenix Force", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2158.249755859375, 896.5650634765625, -1395.2825927734375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Phoenix.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Mind Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1763.337890625, 900.3715209960938, -1137.88671875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.MindExplosion.Fire:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Phoenix", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1817.732666015625, 900.3715209960938, -1124.179931640625)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.PhoenixBlast.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Heal", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1982.4317626953125, 900.3715209960938, -1057.99609375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("Dark Phoenix The Last Stand Powers")
+
+Section:NewButton("Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1702.817626953125, 900.3715209960938, -1329.7464599609375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Desintegration Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(449.118408203125, 3212.56201171875, 8137.98876953125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.DesintegrationExplosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Mind Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1705.660888671875, 900.3715209960938, -1329.4730224609375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.MindExplosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Heal", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(1410.4339599609375, 2207.53173828125, 8060.892578125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("Thanos Powers")
+
+Section:NewButton("Snap", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(906.04052734375, 1009.0567016601562, 7362.18310546875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Chasquido.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Time Stop", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-4659.84033203125, 913.2865600585938, -617.6166381835938)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.TimeStop.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("RealityChange", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-4769.517578125, 913.2865600585938, -839.2008666992188)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.RealityChange.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Invisible", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2472.0390625, 915.8460693359375, -385.6199951171875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Invisible.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Reality Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2586.93310546875, 911.0318603515625, -606.20458984375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.RealityExplosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Floor Power", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2197.8203125, 1469.533203125, 9478.4140625)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.FloorPower.Fire:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("Infinity Ultron Powers")
+
+Section:NewButton("Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-7286.681640625, 3930.340087890625, -8453.0771484375)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Time Stop", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2097.577880859375, 900.9901733398438, -421.9370422363281)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.TimeStop.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Sword Attack", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2189.240966796875, 900.9901733398438, -406.02691650390625)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.AttackSword.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("ShockWave", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2179.20751953125, 900.9901733398438, -404.26513671875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.ShockWave.Fire:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("White Raven Powers")
+
+Section:NewButton("Explosion", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2983.645263671875, 900, -1147.5810546875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Heal", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2171.96435546875, 1004.379150390625, -523.1021728515625)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Raven", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2282.462158203125, 905.4111938476562, 354.8330993652344)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Raven.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Ultimate", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-1836.307861328125, 2963.20556640625, 9553.2783203125)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Ultimate.Fire:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("Doctor Strange Powers")
+
+Section:NewButton("Phantoms", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+    local args = {
+        [1] = Vector3.new(-2586.775634765625, 900.8193359375, -431.05584716796875)
+    }
+
+    game:GetService("Players").LocalPlayer.Character.Phantoms.Fire:FireServer(unpack(args))
+end)
+
+local Tab = Window:NewTab("Kill")
+local Section = Tab:NewSection("Instant Kill")
+
+Section:NewKeybind("Instant Kill Someone", "", Enum.KeyCode.R, function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "r" then
+            local player = getPlayer()
+            if player then
+                -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+                local args = {
+                    [1] = player.character.RightLowerArm,
+                    [2] = Vector3.new(-2274.140625, 904.6631469726562, 235.2376251220703)
+                }
+
+                game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(unpack(args))
+
+
+            end
+        end
+    end)
+
+
+end)
+
+Section:NewKeybind("Telekinesis", " OP", Enum.KeyCode.E, function()
+    print("You just clicked the bind")
+
+    local function getPlayer()
+        local userInput = game:GetService("UserInputService")
+        local cam = workspace.CurrentCamera
+        local mousePos = userInput:GetMouseLocation()
+        local mouseRay = cam:ViewportPointToRay(mousePos.X, mousePos.Y)
+        players = {}
+        for _, x in next, game:GetService('Players'):GetPlayers() do
+            players[#players + 1] = x.Character
+        end
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+        raycastParams.FilterDescendantsInstances = players
+        raycastParams.IgnoreWater = true
+        local raycastResult = workspace:Raycast(mouseRay.Origin, mouseRay.Direction * 1000, raycastParams)
+        if raycastResult then
+            for _, x in next, game:GetService('Players'):GetPlayers() do
+                if not raycastResult.Instance:IsDescendantOf(x.Character) then
+                    continue
+                end
+                return x
+            end
+        end
+        return false
+    end
+
+    local function Set(list)
+        local set = {}
+        for _, l in ipairs(list) do
+            if l then
+                set[l] = true
+            end
+        end
+        return set
+    end
+
+    game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+        if key == "e" then
+            local player = getPlayer()
+            if player then
+                -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+                local args = {
+                    [1] = player.character.UpperTorso,
+                    [2] = Vector3.new(-8185.22607421875, 906.3134155273438, -6130.44091796875)
+                }
+
+                game:GetService("Players").LocalPlayer.Character.Telekinesis.Fire:FireServer(unpack(args))
+
+
+            end
+        end
+    end)
+
+
+end)
+
+Section:NewButton("Kill All", "", function()
+    local Plr = game.Players.LocalPlayer
+    for i, Player in pairs(game.Players:GetPlayers()) do
+
+        if Player.Character ~= nil and Player ~= Plr then
+            local mag = (Player.Character.UpperTorso.Position - Plr.Character.UpperTorso.Position).magnitude
+            if mag < 100000 then
+                local Target = Player.Character or Player.CharacterAdded:Wait()
+
+                -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+                local args = {
+                    [1] = Target.RightLowerArm,
+                    [2] = Vector3.new(-2274.140625, 904.6631469726562, 235.2376251220703)
+                }
+
+                game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(unpack(args))
+
+
+            end
+        end
+    end
+
+    local Plr = game.Players.LocalPlayer
+    for i, Player in pairs(game.Players:GetPlayers()) do
+
+        if Player.Character ~= nil and Player ~= Plr then
+            local mag = (Player.Character.UpperTorso.Position - Plr.Character.UpperTorso.Position).magnitude
+            if mag < 10000 then
+                local Target = Player.Character or Player.CharacterAdded:Wait()
+
+                -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+                local args = {
+                    [1] = Target.RightLowerArm,
+                    [2] = Vector3.new(-2274.140625, 904.6631469726562, 235.2376251220703)
+                }
+
+                game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(unpack(args))
+
+
+            end
+        end
+    end
+
+    local Plr = game.Players.LocalPlayer
+    for i, Player in pairs(game.Players:GetPlayers()) do
+
+        if Player.Character ~= nil and Player ~= Plr then
+            local mag = (Player.Character.UpperTorso.Position - Plr.Character.UpperTorso.Position).magnitude
+            if mag < 1000 then
+                local Target = Player.Character or Player.CharacterAdded:Wait()
+
+                -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+                local args = {
+                    [1] = Target.RightLowerArm,
+                    [2] = Vector3.new(-2274.140625, 904.6631469726562, 235.2376251220703)
+                }
+
+                game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(unpack(args))
+
+
+            end
+        end
+    end
+
+
+
+    local Plr = game.Players.LocalPlayer
+    for i, Player in pairs(game.Players:GetPlayers()) do
+
+        if Player.Character ~= nil and Player ~= Plr then
+            local mag = (Player.Character.UpperTorso.Position - Plr.Character.UpperTorso.Position).magnitude
+            if mag < 100 then
+                local Target = Player.Character or Player.CharacterAdded:Wait()
+
+                -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+                local args = {
+                    [1] = Target.RightLowerArm,
+                    [2] = Vector3.new(-2274.140625, 904.6631469726562, 235.2376251220703)
+                }
+
+                game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(unpack(args))
+
+
+            end
+        end
+    end
+
+
+end)
+
+local Tab = Window:NewTab("TPWP")
+local Section = Tab:NewSection("Teleport With Players")
+
+Section:NewButton("Illuminati", "", function()
+    -- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = Vector3.new(-2342.793212890625, 901.007568359375, -852.7647094726562)
+}
+
+game:GetService("Players").LocalPlayer.Character.PortalToIluminatiBase.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Earth", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = Vector3.new(-3109.492431640625, 7900.39013671875, -69697.109375)
+}
+
+game:GetService("Players").LocalPlayer.Character.PortalToEarth.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Vishanti", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = Vector3.new(-3106.646484375, 7904.2724609375, -69678.7578125)
+}
+
+game:GetService("Players").LocalPlayer.Character.PortalToVishantiBook.Fire:FireServer(unpack(args))
+end)
+
+Section:NewButton("Poison Ivy House", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-607.029052734375, 931.9381103515625, -4280.13037109375), Vector3.new(0.3573344051837921, -0.16639794409275055, -0.9190342426300049)),
+    [2] = Vector3.new(-607.029052734375, 931.9381103515625, -4280.13037109375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Kamar-Taj", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(1970.762939453125, 1022.4483032226562, -3520.984375), Vector3.new(-0.5646039247512817, -0.09717291593551636, 0.8196218013763428)),
+    [2] = Vector3.new(1970.762939453125, 1022.4483032226562, -3520.984375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Wundagore", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(2940.781982421875, 1748.086181640625, -7205.55859375), Vector3.new(0.699129045009613, -0.15427708625793457, -0.6981526017189026)),
+    [2] = Vector3.new(2940.781982421875, 1748.086181640625, -7205.55859375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Wanda's Cabin", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-7926.5078125, 908.6902465820312, -6478.2958984375), Vector3.new(-0.4661993384361267, -0.044057056307792664, -0.8835819959640503)),
+    [2] = Vector3.new(-7926.5078125, 908.6902465820312, -6478.2958984375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Teen Titans", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-4781.3134765625, 914.5995483398438, -808.645751953125), Vector3.new(-0.990218460559845, -0.06823620945215225, -0.12170214205980301)),
+    [2] = Vector3.new(-4781.3134765625, 914.5995483398438, -808.645751953125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Hydra Base", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-7017.28515625, 906.3836669921875, 2270.487060546875), Vector3.new(-0.9493253231048584, -0.04138648137450218, -0.31155842542648315)),
+    [2] = Vector3.new(-7017.28515625, 906.3836669921875, 2270.487060546875)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Mansion", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-2277.17333984375, 900.6016845703125, 313.99298095703125), Vector3.new(-0.0014648567885160446, -0.1068735122680664, 0.9942715764045715)),
+    [2] = Vector3.new(-2277.17333984375, 900.6016845703125, 313.99298095703125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("WestView", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(1975.5498046875, 904.9810791015625, -1196.4912109375), Vector3.new(0.9907163977622986, -0.12847819924354553, 0.044433314353227615)),
+    [2] = Vector3.new(1975.5498046875, 904.9810791015625, -1196.4912109375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Limbo", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-2093.4296875, 8213.15234375, -75623.84375), Vector3.new(0.007348449435085058, -0.19987782835960388, 0.9797932505607605)),
+    [2] = Vector3.new(-2093.4296875, 8213.15234375, -75623.84375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Greek House", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-6106.2998046875, 7736.279296875, -70048.53125), Vector3.new(-0.9826949834823608, -0.1825772076845169, 0.031243158504366875)),
+    [2] = Vector3.new(-6106.2998046875, 7736.279296875, -70048.53125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+Section:NewButton("Salem", "", function()
+-- Script generated by Nut The Menace Spy - credits to Claudev0#8849
+
+local args = {
+    [1] = CFrame.new(Vector3.new(-4452.5185546875, 7917.37939453125, -69751.09375), Vector3.new(-0.06015779823064804, -0.3976283669471741, -0.9155722856521606)),
+    [2] = Vector3.new(-4452.5185546875, 7917.37939453125, -69751.09375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Portals.RemoteEvent:FireServer(unpack(args))
+end)
+
+local Tab = Window:NewTab("Teleport")
+local Section = Tab:NewSection("Places")
+
+Section:NewButton("Earth", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2308, 904, -673))
+end)
+
+Section:NewButton("Illuminati", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2981, 7905, -69499))
+end)
+
+Section:NewButton("Vishanti", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1659, 8413, -68449))
+end)
+
+Section:NewButton("Poison Ivy House", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-608, 935, -4275))
+end)
+
+Section:NewButton("Kamar-Taj", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1972, 1021, -3524))
+end)
+
+Section:NewButton("Wundagore", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(2941, 1751, -7205))
+end)
+
+Section:NewButton("Wanda's Cabin", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-7927, 907, -6477))
+end)
+
+Section:NewButton("Teen Titans", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-4785, 918, -806))
+end)
+
+Section:NewButton("Hydra Base", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-7067, 909, 2292))
+end)
+
+Section:NewButton("Mansion", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2279, 903, 317))
+end)
+
+Section:NewButton("WestView", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1969, 906, -1197))
+end)
+
+Section:NewButton("Limbo", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2129, 8212, -75587))
+end)
+
+Section:NewButton("Salem", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-4453, 7920, -69761))
+end)
+
+Section:NewButton("Greek House", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-6105, 7739, -70050))
+end)
+
+local Tab = Window:NewTab("Spell")
+local Section = Tab:NewSection("Zatanna")
+
+
+Section:NewButton("Burn", "Click and Press Q", function()
+    game.Players:Chat("Nrub")
+
+end) 
+
+Section:NewButton("Sleep", "Click and Press Q", function()
+    game.Players:Chat("Peels")
+
+end) 
+
+Section:NewButton("Blind", "Click and Press Q", function()
+    game.Players:Chat("Dnilb")
+
+end) 
+
+Section:NewButton("Fire Blast", "Click and Press Q", function()
+    game.Players:Chat("Tsalb erif")
+
+end) 
+
+Section:NewButton("Heal", "Click and Press Q", function()
+    game.Players:Chat("Laeh")
+
+end) 
+
+Section:NewButton("Light", "Click and Press Q", function()
+    game.Players:Chat("Thgil")
+
+end) 
+
+Section:NewButton("Shield", "Click and Press Q", function()
+    game.Players:Chat("Dleihs")
+
+end) 
+
+Section:NewButton("Love", "Click and Press Q", function()
+    game.Players:Chat("Evol")
+
+end) 
+
+Section:NewButton("Mind Control", "Click and Press Q", function()
+    game.Players:Chat("Lortnoc Dnim")
+
+end) 
+
+Section:NewButton("Handcuffs", "Click and Press Q", function()
+    game.Players:Chat("Sffucdnah")
+
+end) 
+
+Section:NewButton("Portal", "Click and Press Q", function()
+    game.Players:Chat("Latrop")
+
+end) 
+
+Section:NewButton("Freeze", "Click and Press Q", function()
+    game.Players:Chat("Ezeerf")
+
+end) 
+
+Section:NewButton("Water Bubble", "Click and Press Q", function()
+    game.Players:Chat("Elbbub retaw")
+
+end) 
+
+Section:NewButton("Super Shield", "Click and Press Q", function()
+    game.Players:Chat("Dleihs repus")
+
+end) 
+
+local Section = Tab:NewSection("Agatha")
+
+Section:NewButton("Ball of Energy", "Click and Press Q", function()
+    game.Players:Chat("Inspiration")
+
+end)
+
+Section:NewButton("Telekinesis", "Click and Press E", function()
+    game.Players:Chat("Ventilabis")
+
+end)
+
+Section:NewButton("Mental Damage", "Click and Press Z", function()
+    game.Players:Chat("Mentis Damnum")
+
+end)
+
+Section:NewButton("Rune Spell", "Click and Press T", function()
+    game.Players:Chat("Magica Tutela")
+
+end)
+
+local Tab = Window:NewTab("Items")
+local Section = Tab:NewSection("Stones")
+
+Section:NewButton("Power Stone", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-2279, 981, 516))
+end)
+
+Section:NewButton("Space Stone", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1852, 904, -366))
+end)
+
+Section:NewButton("Reality Stone", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-8296, 907, -6171))
+end)
+
+Section:NewButton("Time Stone", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-617, 935, -4387))
+end)
+
+Section:NewButton("Soul Stone", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-7006, 1085, 2598))
+end)
+
+Section:NewButton("Mind Stone", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-7207, 7627, -65269))
+end)
+
+local Section = Tab:NewSection("Books")
+Section:NewButton("Vishanti", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1778, 8376, -68450))
+end)
+
+Section:NewButton("Darkhold", "", function()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(2970, 1751, -7271))
+end)
+
+local Tab = Window:NewTab("Others")
+local Section = Tab:NewSection("Misc")
+
+Section:NewButton("Infinite Yield", "Admin", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Created: AcidX3yt")
+local Section = Tab:NewSection("Discord: https://discord.gg/RWc4w7atXm")
+
+local Section = Tab:NewSection("Toggle UI")
+Section:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
